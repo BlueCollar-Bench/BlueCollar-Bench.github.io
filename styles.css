@@ -1,113 +1,138 @@
-:root {
-  --bg: #fafafa;
-  --fg: #1a1a1a;
-  --muted: #555;
-  --line: #e6e6e6;
-  --link: #0b57d0;
-  --max: 44rem;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #222;
+  background: #fff;
+  padding-bottom: 3rem;
 }
 
-* { box-sizing: border-box; }
-html { font-size: 18px; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  line-height: 1.55;
+#main {
+  padding-top: 2rem;
+  max-width: 900px;
 }
-.page {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 3.5rem 1.25rem 4rem;
+
+.title-block {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+  line-height: 1.25;
 }
-.hero { margin-bottom: 2.25rem; }
-.eyebrow {
-  margin: 0 0 0.75rem;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
+
+.subtitle {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #333;
 }
-h1 {
-  margin: 0 0 0.85rem;
-  font-size: 2.35rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
+
+.team-name {
+  margin: 1rem 0 0.25rem;
+  font-size: 1.15rem;
 }
-h2 {
-  margin: 2.35rem 0 0.65rem;
-  font-size: 1.25rem;
-  font-weight: 650;
-}
-.tagline { margin: 0 0 1rem; font-size: 1.05rem; }
-.collab, .links, .note, .section-lead, footer {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.92rem;
-  color: var(--muted);
-}
-.collab { margin: 0 0 0.75rem; }
-.links { margin: 0; }
-.links span { margin: 0 0.35rem; }
-.section-lead { margin: 0 0 1rem; }
-p { margin: 0 0 0.9rem; }
-a {
-  color: var(--link);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-a:hover { text-decoration-thickness: 2px; }
-.note {
-  padding: 0.85rem 1rem;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-.logo-grid {
-  list-style: none;
+
+.team-note {
   margin: 0 0 1rem;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: #666;
 }
-.logo-card {
+
+/* RTX-like compact logo banner */
+.logo-banner {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  min-height: 5.5rem;
-  padding: 0.5rem;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  align-items: center;
+  gap: 1.25rem 1.75rem;
+  max-width: 720px;
+  margin: 0.5rem auto 0.35rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.logo-banner img {
+  height: 36px;
+  width: auto;
+  opacity: 0.95;
+}
+
+.logo-caption {
+  margin: 0.25rem auto 1.25rem;
+  max-width: 560px;
+  font-size: 0.82rem;
+  color: #777;
+}
+
+/* Top-level icon links (RTX nav-pills pattern) */
+.top-links {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.link-row {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.link-row > li > a {
+  color: #337ab7;
   text-decoration: none;
+  padding: 0.5rem 0.25rem;
 }
-.logo-card img {
+
+.link-row > li > a:hover,
+.link-row > li > a:focus {
+  background: transparent;
+  color: #23527c;
+}
+
+.link-row h4 {
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+}
+
+.link-row .soon {
   display: block;
-  max-width: 100%;
-  height: auto;
-  max-height: 4.5rem;
+  font-size: 0.72rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
+
+.disabled-link {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.section {
+  margin-top: 0.5rem;
+}
+
+.section h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.muted, .footer-note {
+  color: #777;
+  font-size: 0.92rem;
+}
+
 .bibtex {
-  margin: 0.75rem 0 0;
+  margin-top: 0.75rem;
   padding: 1rem 1.1rem;
+  background: #f7f7f7;
+  border: 1px solid #eee;
   overflow-x: auto;
-  border: 1px solid var(--line);
-  background: #fff;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   line-height: 1.45;
-  color: #222;
 }
-footer {
-  margin-top: 3rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
-}
+
 @media (max-width: 640px) {
-  html { font-size: 17px; }
-  h1 { font-size: 1.9rem; }
-  .page { padding-top: 2.25rem; }
-  .logo-grid { grid-template-columns: 1fr; }
+  .title-block { font-size: 1.55rem; }
+  .subtitle { font-size: 1rem; }
+  .logo-banner { gap: 0.85rem 1rem; }
+  .logo-banner img { height: 30px; }
+  .link-row img { height: 48px !important; }
 }

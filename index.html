@@ -5,146 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BlueCollar-Bench</title>
   <meta name="description" content="A collaborative multi-lab benchmark and open egocentric dataset of skilled physical work." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <p class="eyebrow">Collaborative multi-lab project · targeting ICML 2027</p>
-      <h1>BlueCollar-Bench</h1>
-      <p class="tagline">
-        A benchmark and open egocentric dataset of repeated physical work,
-        for measuring prediction, failure, and generalization in physical AI.
-      </p>
-      <p class="collab">
-        Science lead: Patrick Rim (Build AI Research) · Process &amp; ops: Midcentury
-      </p>
-      <p class="links">
-        <a href="https://github.com/BlueCollar-Bench">GitHub</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://form.typeform.com/to/TTJIes9h">Availability form</a>
-      </p>
-    </header>
+  <div class="container" id="main">
+    <div class="row">
+      <h2 class="col-md-12 text-center title-block">
+        <strong>BlueCollar-Bench</strong><br />
+        <span class="subtitle">A Benchmark and Open Egocentric Dataset of Skilled Physical Work</span>
+      </h2>
+    </div>
 
-    <section id="abstract">
-      <h2>Abstract</h2>
-      <p>
-        Most progress metrics for physical AI still lean on scripted lab tasks or
-        short egocentric clips that do not look like day-to-day skilled work.
-        BlueCollar-Bench is a multi-lab effort to build a shared evaluation and an
-        open egocentric dataset centered on real work cycles: the same kinds of
-        tasks, repeated across people, stations, sites, and countries.
-      </p>
-      <p>
-        The scientific goal is a durable community resource for asking how models
-        predict what happens next, anticipate failure, and generalize when the
-        worker, the station, or the environment changes. Exact tracks, metrics,
-        and splits are being settled with the collaborator group before evaluation
-        begins.
-      </p>
-    </section>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="team-name"><b>BlueCollar-Bench Collaboration</b></p>
+        <p class="team-note">Science lead: Patrick Rim (Build AI Research) · Process &amp; ops: Midcentury</p>
 
-    <section id="collaborators">
-      <h2>Collaborating institutions</h2>
-      <p class="section-lead">
-        Logos appear in color for groups that have returned the availability /
-        interests form. Submit the form to be listed here.
-      </p>
-      <ul class="logo-grid">
-        <li>
-          <a class="logo-card" href="https://www.nus.edu.sg/" title="National University of Singapore">
-            <img src="assets/logos/nus.svg" alt="National University of Singapore" width="180" height="70" />
-          </a>
-        </li>
-        <li>
-          <a class="logo-card" href="https://www.unc.edu/" title="University of North Carolina at Chapel Hill">
-            <img src="assets/logos/unc.svg" alt="UNC Chapel Hill" width="180" height="70" />
-          </a>
-        </li>
-        <li>
-          <a class="logo-card" href="https://www.universiteitleiden.nl/" title="Leiden University">
-            <img src="assets/logos/leiden.svg" alt="Leiden University" width="180" height="70" />
-          </a>
-        </li>
-        <li>
-          <a class="logo-card" href="https://www.unict.it/" title="University of Catania">
-            <img src="assets/logos/catania.svg" alt="University of Catania" width="180" height="70" />
-          </a>
-        </li>
-      </ul>
-      <p class="note">
-        More labs are in conversation. Institutional marks are added as forms come in;
-        the public strip does not list unconfirmed invites.
-      </p>
-    </section>
+        <!-- Compact institution banner (Option A: form responders only) -->
+        <div class="logo-banner" aria-label="Collaborating institutions">
+          <img src="assets/logos/nus.svg" alt="NUS" height="36" />
+          <img src="assets/logos/unc.svg" alt="UNC Chapel Hill" height="36" />
+          <img src="assets/logos/leiden.svg" alt="Leiden University" height="36" />
+          <img src="assets/logos/catania.svg" alt="University of Catania" height="36" />
+        </div>
+        <p class="logo-caption">
+          Institutional marks appear for groups that returned the
+          <a href="https://form.typeform.com/to/TTJIes9h">availability form</a>.
+          More labs are in conversation.
+        </p>
+      </div>
+    </div>
 
-    <section id="overview">
-      <h2>Overview</h2>
-      <p>
-        The proposal starts from industrial and other skilled physical settings, but
-        the organizing idea under discussion is the <em>structure</em> of the data:
-        many repeated executions of the same work, across workers and places. That
-        structure is what lets a benchmark ask about repetition, execution quality,
-        and generalization in ways that short curated clips usually cannot.
-      </p>
-      <p>
-        Open questions the group is working through include what the benchmark should
-        be known for, which task families belong in a first release, whether
-        repetition and quality should cut across every track, and how hold-outs
-        (new worker, station, site, country, industry) should separate task novelty
-        from environment novelty. A planning freeze comes before any public scores,
-        so definitions do not move once evaluation starts.
-      </p>
-    </section>
+    <div class="row top-links">
+      <div class="col-md-12 text-center">
+        <ul class="nav nav-pills nav-justified link-row">
+          <li>
+            <a class="disabled-link" href="#citation" title="Paper coming with the preprint">
+              <img src="assets/icons/paper.svg" height="60" alt="" />
+              <h4><strong>Paper</strong></h4>
+              <span class="soon">soon</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://form.typeform.com/to/TTJIes9h">
+              <img src="assets/icons/form.svg" height="60" alt="" />
+              <h4><strong>Form</strong></h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/BlueCollar-Bench">
+              <img src="assets/icons/github.png" height="60" alt="" />
+              <h4><strong>Code</strong></h4>
+            </a>
+          </li>
+          <li>
+            <a class="disabled-link" href="#dataset" title="Dataset release forthcoming">
+              <img src="assets/icons/data.svg" height="60" alt="" />
+              <h4><strong>Data</strong></h4>
+              <span class="soon">soon</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <section id="dataset">
-      <h2>Dataset</h2>
-      <p>
-        Alongside the benchmark, the project plans a joint release of a large open
-        egocentric dataset of skilled physical work. The broader corpus is built for
-        diversity across people and capture settings; the public split and evaluation
-        protocol will be fixed with collaborators. The benchmark itself will sit on a
-        subset of that data.
-      </p>
-      <p class="note">
-        Downloads, cards, and leaderboards will land here when they are ready. This
-        page is intentionally a seed stub.
-      </p>
-    </section>
+    <div class="row section">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Abstract</h3>
+        <p>
+          Most progress metrics for physical AI still lean on scripted lab tasks or
+          short egocentric clips that do not look like day-to-day skilled work.
+          BlueCollar-Bench is a multi-lab effort to build a shared evaluation and an
+          open egocentric dataset centered on real work cycles: the same kinds of
+          tasks, repeated across people, stations, sites, and countries.
+        </p>
+        <p>
+          The scientific goal is a durable community resource for asking how models
+          predict what happens next, anticipate failure, and generalize when the
+          worker, the station, or the environment changes. Exact tracks, metrics,
+          and splits are being settled with the collaborator group before evaluation
+          begins.
+        </p>
+      </div>
+    </div>
 
-    <section id="involve">
-      <h2>Get involved</h2>
-      <p>
-        Collaboration is async-first on Slack. If you have been invited and have not
-        yet returned availability and interests, please use
-        <a href="https://form.typeform.com/to/TTJIes9h">this form</a>
-        so we can schedule the October planning window and list your institution above.
-      </p>
-    </section>
+    <div class="row section">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Overview</h3>
+        <p>
+          The proposal starts from industrial and other skilled physical settings, but
+          the organizing idea under discussion is the <em>structure</em> of the data:
+          many repeated executions of the same work, across workers and places. That
+          structure is what lets a benchmark ask about repetition, execution quality,
+          and generalization in ways that short curated clips usually cannot.
+        </p>
+        <p>
+          Open questions the group is working through include what the benchmark should
+          be known for, which task families belong in a first release, whether
+          repetition and quality should cut across every track, and how hold-outs
+          (new worker, station, site, country, industry) should separate task novelty
+          from environment novelty. A planning freeze comes before any public scores,
+          so definitions do not move once evaluation starts. Target venue: ICML 2027.
+        </p>
+      </div>
+    </div>
 
-    <section id="citation">
-      <h2>Citation</h2>
-      <p>Citation details will ship with the preprint. Stub for now:</p>
-      <pre class="bibtex"><code>@inproceedings{bluecollarbench2027,
+    <div class="row section" id="dataset">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Dataset</h3>
+        <p>
+          Alongside the benchmark, the project plans a joint release of a large open
+          egocentric dataset of skilled physical work. The broader corpus is built for
+          diversity across people and capture settings; the public split and evaluation
+          protocol will be fixed with collaborators. The benchmark itself will sit on a
+          subset of that data.
+        </p>
+        <p class="muted">
+          Downloads, cards, and leaderboards will land here when they are ready.
+        </p>
+      </div>
+    </div>
+
+    <div class="row section">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Get involved</h3>
+        <p>
+          Collaboration is async-first on Slack. If you have been invited and have not
+          yet returned availability and interests, please use
+          <a href="https://form.typeform.com/to/TTJIes9h">this form</a>
+          so we can schedule the October planning window and list your institution in
+          the banner above.
+        </p>
+      </div>
+    </div>
+
+    <div class="row section" id="citation">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Citation</h3>
+        <p>Citation details will ship with the preprint. Stub for now:</p>
+        <pre class="bibtex"><code>@inproceedings{bluecollarbench2027,
   title     = {BlueCollar-Bench: A Benchmark and Open Egocentric Dataset of Skilled Physical Work},
   author    = {{BlueCollar-Bench Collaboration}},
   booktitle = {International Conference on Machine Learning (ICML)},
   year      = {2027},
   note      = {Placeholder — update when the preprint is available}
 }</code></pre>
-    </section>
+      </div>
+    </div>
 
-    <section id="ack">
-      <h2>Acknowledgements</h2>
-      <p>
-        BlueCollar-Bench is a multi-lab collaboration. A full author list and
-        affiliations will appear with the paper.
-      </p>
-    </section>
-
-    <footer>
-      <p><a href="https://github.com/BlueCollar-Bench">github.com/BlueCollar-Bench</a></p>
-    </footer>
-  </main>
+    <div class="row section">
+      <div class="col-md-10 col-md-offset-1">
+        <h3>Acknowledgements</h3>
+        <p>
+          BlueCollar-Bench is a multi-lab collaboration. A full author list and
+          affiliations will appear with the paper.
+        </p>
+        <p class="muted footer-note">
+          Site layout adapted from the
+          <a href="https://robotics-transformer-x.github.io/">Open X-Embodiment / RT-X</a>
+          project page (Jon Barron template family).
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,9 +1,6 @@
 # BlueCollar-Bench
 
-Live site: https://bluecollar-bench.github.io/
+Live: https://bluecollar-bench.github.io/
 
-Seed-stage academic placeholder. Collaborating-institution logos (color) are listed only for groups that returned the availability / interests form.
-
-## Update logos when forms come in
-
-Edit `index.html` → `#collaborators` `.logo-grid`. Add a card; drop a mark in `assets/logos/`. Do not list unconfirmed invites on the public strip.
+RTX-style seed page: compact institution banner + top links (Paper / Form / Code / Data).
+Option A: banner logos only for Typeform responders.
