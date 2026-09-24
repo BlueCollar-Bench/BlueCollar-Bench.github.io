@@ -4,13 +4,11 @@
   --muted: #555;
   --line: #e6e6e6;
   --link: #0b57d0;
-  --max: 42rem;
+  --max: 44rem;
 }
 
 * { box-sizing: border-box; }
-
 html { font-size: 18px; }
-
 body {
   margin: 0;
   background: var(--bg);
@@ -18,15 +16,12 @@ body {
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   line-height: 1.55;
 }
-
 .page {
   max-width: var(--max);
   margin: 0 auto;
   padding: 3.5rem 1.25rem 4rem;
 }
-
-.hero { margin-bottom: 2.5rem; }
-
+.hero { margin-bottom: 2.25rem; }
 .eyebrow {
   margin: 0 0 0.75rem;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -35,7 +30,6 @@ body {
   text-transform: uppercase;
   color: var(--muted);
 }
-
 h1 {
   margin: 0 0 0.85rem;
   font-size: 2.35rem;
@@ -43,45 +37,58 @@ h1 {
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
-
 h2 {
-  margin: 2.25rem 0 0.65rem;
+  margin: 2.35rem 0 0.65rem;
   font-size: 1.25rem;
   font-weight: 650;
 }
-
-.tagline {
-  margin: 0 0 1rem;
-  font-size: 1.05rem;
-  color: var(--fg);
-}
-
-.collab, .links, .note, footer {
+.tagline { margin: 0 0 1rem; font-size: 1.05rem; }
+.collab, .links, .note, .section-lead, footer {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.92rem;
   color: var(--muted);
 }
-
 .collab { margin: 0 0 0.75rem; }
 .links { margin: 0; }
 .links span { margin: 0 0.35rem; }
-
+.section-lead { margin: 0 0 1rem; }
 p { margin: 0 0 0.9rem; }
-
 a {
   color: var(--link);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
-
 a:hover { text-decoration-thickness: 2px; }
-
 .note {
   padding: 0.85rem 1rem;
   border: 1px solid var(--line);
   background: #fff;
 }
-
+.logo-grid {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.logo-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 4.5rem;
+}
 .bibtex {
   margin: 0.75rem 0 0;
   padding: 1rem 1.1rem;
@@ -93,15 +100,14 @@ a:hover { text-decoration-thickness: 2px; }
   line-height: 1.45;
   color: #222;
 }
-
 footer {
   margin-top: 3rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--line);
 }
-
 @media (max-width: 640px) {
   html { font-size: 17px; }
   h1 { font-size: 1.9rem; }
   .page { padding-top: 2.25rem; }
+  .logo-grid { grid-template-columns: 1fr; }
 }

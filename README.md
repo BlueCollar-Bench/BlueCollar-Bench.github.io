@@ -1,17 +1,9 @@
 # BlueCollar-Bench
 
-Project site for [BlueCollar-Bench](https://bluecollar-bench.github.io/).
+Live site: https://bluecollar-bench.github.io/
 
-Static academic placeholder (GitHub Pages from `main` `/`). Modeled loosely on the RT-X / Open X-Embodiment project page pattern.
+Seed-stage academic placeholder. Collaborating-institution logos (color) are listed only for groups that returned the availability / interests form.
 
-## Local preview
+## Update logos when forms come in
 
-Open `index.html` in a browser, or:
-
-```bash
-python3 -m http.server 8000
-```
-
-## Org
-
-https://github.com/BlueCollar-Bench
+Edit `index.html` → `#collaborators` `.logo-grid`. Add a card; drop a mark in `assets/logos/`. Do not list unconfirmed invites on the public strip.
